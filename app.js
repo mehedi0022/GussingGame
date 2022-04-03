@@ -6,13 +6,13 @@ for( let i = 1; i < 6; i++){
     let gussNumber = Math.random() * 5 + 1;
     gussNumber = Math.floor(gussNumber);
     if(num==gussNumber){
-        console.log("Yeah! You have Wone. And The Rendom Number Was " + gussNumber);
+        document.write("Yeah! You have Wone. And The Rendom Number Was " + gussNumber + "<br/>");
         wonecounter++
     }
     else{
-        console.log("Oh! You have Lost. And The Rendom Number Was " + gussNumber);
+        document.write("Oh! You have Lost. And The Rendom Number Was " + gussNumber + "<br/>");
         lostcounter++
     }
 }
-document.write("You have Wone:"+ " "+ wonecounter + " Times <br/>");
-document.write("You have Lost:"+ " "+ lostcounter + " Times");
+document.write("<b>"+"You have Wone:"+ " "+ wonecounter + " Times <br/>" + "</b>");
+document.write("<b>"+"You have Lost:"+ " "+ lostcounter + " Times" + "</b>");
